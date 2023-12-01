@@ -21,7 +21,7 @@ function alterarScore () {
 }
 // Adicionando eventos de click
 papelElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
-jogadorElement.src = 'images/icon-paper/svg'
+jogadorElement.src = 'images/icon-paper.svg'
 switch (bot) {
     case 0:
         botElement.src = 'images/icon-rock.svg'
@@ -34,9 +34,49 @@ switch (bot) {
         break
     case 2:
         botElement.src = 'images/icon-scissors.svg'
-        resultElement.innerHTML = "resultado: Você Perdeu... D:"
+        resultElement.innerHTML = "Resultado: Você Perdeu... D:"
         contadorPc++
         break
 }
 alterarScore()
+})
+tesouraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
+    jogadorElement.src = 'images/icon-scissors.svg'
+    switch (bot) {
+        case 0:
+            botElement.src = 'images/icon-paper.svg'
+            resultElement.innerHTML = "Resultado: Você venceu!!! :D"
+            contadorJogador++
+            break
+        case 1:
+            botElement.src = 'images/icon-rock.svg'
+            resultElement.innerHTML = "Resultado: Você Perdeu... D:"
+            contadorPc++
+            break
+        case 2:
+            botElement.src = 'images/icon-scissors.svg'
+            resultElement.innerHTML = "Resultado: EMPATE... :C"
+            break
+    }
+    alterarScore()
+})
+pedraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
+    jogadorElement.src = 'images/icon-rock.svg'
+    switch (bot) {
+        case 0:
+            botElement.src = 'images/icon-rock.svg'
+            resultElement.innerHTML = "Resultado: EMPATE... :C"
+            break
+        case 1:
+            botElement.src = 'images/icon-paper.svg'
+            resultElement.innerHTML = "Resultado: Você Perdeu... D:"
+            contadorPc++
+            break
+        case 2:
+            botElement.src = 'images/icon-scissors.svg'
+            resultElement.innerHTML = "Resultado: Você venceu!!! :D "
+            contadorJogador++
+            break
+    }
+    alterarScore()
 })
