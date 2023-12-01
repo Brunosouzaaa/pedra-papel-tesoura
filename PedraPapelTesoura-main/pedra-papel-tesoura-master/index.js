@@ -17,10 +17,9 @@
 function alterarScore () {
     score1Element.innerHTML = `${contadorJogador} 
     score2Element.innerHTML = `${contadorPc} 
-
 }
 // Adicionando eventos de click
-papelElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
+papelElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3)})
 jogadorElement.src = 'images/icon-paper.svg'
 switch (bot) {
     case 0:
@@ -39,7 +38,7 @@ switch (bot) {
         break
 }
 alterarScore()
-tesouraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
+tesouraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3)})
     jogadorElement.src = 'images/icon-scissors.svg'
     switch (bot) {
         case 0:
@@ -58,7 +57,7 @@ tesouraElement.addEventListener ("click", () => {var bot = Math.floor(Math.rando
             break
     }
     alterarScore()
-pedraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
+pedraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3)})
     jogadorElement.src = 'images/icon-rock.svg'
     switch (bot) {
         case 0:
@@ -76,4 +75,3 @@ pedraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random(
             contadorJogador++
     }
     alterarScore()
-
