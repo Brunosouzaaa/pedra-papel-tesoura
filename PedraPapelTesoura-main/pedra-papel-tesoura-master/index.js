@@ -39,7 +39,6 @@ switch (bot) {
         break
 }
 alterarScore()
-})
 tesouraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
     jogadorElement.src = 'images/icon-scissors.svg'
     switch (bot) {
@@ -59,7 +58,6 @@ tesouraElement.addEventListener ("click", () => {var bot = Math.floor(Math.rando
             break
     }
     alterarScore()
-})
 pedraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random() * 3))
     jogadorElement.src = 'images/icon-rock.svg'
     switch (bot) {
@@ -74,9 +72,8 @@ pedraElement.addEventListener ("click", () => {var bot = Math.floor(Math.random(
             break
         case 2:
             botElement.src = 'images/icon-scissors.svg'
-            resultElement.innerHTML = "Resultado: Você venceu!!! :D "
+            resultElement.innerHTML = "Resultado: Você Venceu... :D"
             contadorJogador++
-            break
     }
     alterarScore()
-})
+
